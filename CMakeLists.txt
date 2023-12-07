@@ -27,4 +27,4 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
 endif()
 
 add_library("imgui" STATIC ${imgui_sources})
-target_include_directories("imgui" PUBLIC ${IMGUI_PATH})
+target_include_directories("imgui" PUBLIC ${IMGUI_PATH} ${IMGUI_PATH}/backends)
